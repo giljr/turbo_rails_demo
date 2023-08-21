@@ -1,0 +1,9 @@
+<h1>Editing room</h1>
+<turbo-frame id="room">
+  <%= render "form", room: @room %>
+</turbo-frame>
+<br>
+<div>
+  <%= link_to "Show this room", @room %> |
+  <%= link_to "Back to rooms", rooms_path %>
+</div>
