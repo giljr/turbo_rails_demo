@@ -1,0 +1,16 @@
+rails new chat 
+cd chat/
+rails g scaffold room name:string
+rails g model room:references message content:text
+rails g model message room:references content:text
+rails s
+git init
+git checkout master
+git checkout -b master
+git branch -M master
+git remote add origin git@github.com:giljr/turbo_rails_demo.git
+git status
+git add -A
+git commit -m ":tada: Initial commit"
+git push -u origin master
+history > history.txt
