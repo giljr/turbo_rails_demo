@@ -1,4 +1,5 @@
 <p id="notice" style="color: green"><%= notice %></p>
+<%= turbo_stream_from @room %>
 <turbo-frame id="room">
   <%= render @room %>
   <p>
